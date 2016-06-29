@@ -111,7 +111,7 @@ class nvm (
     $final_node_instances = $node_instances
   }
 
-  create_resources(::nvm::node::install, $final_node_instances, {
+  create_resources(nvm::node::install, $final_node_instances, {
     user        => $user,
     nvm_dir     => $final_nvm_dir,
   })
